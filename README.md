@@ -73,6 +73,11 @@ cd front
 npm run test
 ```
 
+# VULNERABILITY
+
+the command 'npm audit' allows us to identify clearly the vulnerabilities of the application.
+The analysis if this application is presented bellow. It would be very important to fix these vulnerabilities before pushing the application to production.
+
 # More command lines
 
 #### Bellow are additional commands for the BACKEND, in case of need for the test
