@@ -13,7 +13,7 @@ class Header extends Component {
                 {window.innerWidth > 776 ?
                   (<div className="masthead-title col-10 text-center d-flex justify-content-around m-auto">
                     <div className="btn_white pt-2 m-auto" id="btn_year">
-                      <Link to="/stats" className="m-auto">All the data!</Link>
+                      <Link to="/stats" className="m-auto">All the data</Link>
                     </div>
                     <img src="https://res.cloudinary.com/viviennoel07/image/upload/c_scale,w_398/v1628020618/axa-banque-logo-black-and-white_v4f7u5.png" title="logo" className="header_logo" alt="logo"></img>
                     <div className="btn_white pt-2 m-auto">

@@ -6,6 +6,10 @@ body {
     font-family: "Ubuntu" !important;
 }
 
+.main_wrapp{
+  min-height: 65vh;
+}
+
   .container {
     margin: 0 15px;
     padding: 5px;

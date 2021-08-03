@@ -11,7 +11,7 @@ class Stats extends Component {
         // Initiate the state
         this.state = {
           data: [], 
-          title: 'Évolution des stocks (en €) en fonction du temps',
+          title: 'Evolution of stocks (in €) according to time',
           type: 'd3'
         };
 
@@ -93,11 +93,14 @@ class Stats extends Component {
                 <div className="main_wrapp">
 
                     {/* To display important messages */}
-                    <div id="container_msg"></div>
+                    <div id="container_msg" className="text-center pt-5 pb-5"></div>
                     
-                    <div className="col-md-10 offset-md-1 appear" data-aos="fade">
+                    <div className="col-md-10 offset-md-1 appear pb-5" data-aos="fade">
                         {/* Graph for the stochs gestion */}
-                        {!this.state.data.length || !this.state.data ? <div className="spinner-border" role="status"></div>
+                        {!this.state.data.length || !this.state.data ? 
+                        <div>
+                            <div className="spinner-border" role="status"></div>
+                        </div>
                         : <ChartHighstock data={this.state.data} title={this.state.title} />}
                     </div>
                     
