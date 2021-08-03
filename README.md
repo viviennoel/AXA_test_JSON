@@ -1,4 +1,8 @@
-## Getting started
+# PRODUCTION FOR THE TECHNICAL TEST AXA
+
+![alt text](https://res.cloudinary.com/viviennoel07/image/upload/v1628025020/Capture_d_e%CC%81cran_2021-08-03_a%CC%80_23.09.23_kwf3hs.png)
+
+# GETTING STARTED
 
 ### To deploy the BACKEND :
 
@@ -27,7 +31,7 @@ cd front
 npm i
 ```
 
-#### Start Api
+#### Start the frontend
 
 ```bash
 npm start
