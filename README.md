@@ -1,24 +1,50 @@
 ## Getting started
 
-Install packages
+### To deploy the BACKEND :
+
+The structure of this backend was provided for the technical test. It includes a JSON-server and some data for the modelisation of the stocks evolution.
+
+#### Install packages
 
 ```
 npm i
 ```
 
-Start Api
+#### Start Api
 
 ```bash
 npm run start-api
 ```
 
-Start Api which response with delay (10s)
+### To deploy the FRONTEND :
+
+The frontend was created with react. The command line to start this application have been siplified using a script for a smoother deployment.
+
+#### Install packages
+
+```bash
+cd front
+npm i
+```
+
+#### Start Api
+
+```bash
+npm start
+```
+
+## More command lines
+
+#### Bellow are additional commands for the BACKEND, in case of need for the test
+
+
+#### Start Api which response with delay (10s)
 
 ```bash
 npm run delay-api
 ```
 
-Start Server
+#### Start Server
 
 ```bash
 # Dev

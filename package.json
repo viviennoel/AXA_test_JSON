@@ -8,7 +8,7 @@
     "dev": "nodemon",
     "start-all": "npm run start-api && npm run start",
     "watch": "webpack --watch",
-    "start-api": "json-server ./api.js",
+    "start-api": "PORT=3006 json-server ./api.js",
     "delay-api": "json-server ./api.js --delay 10000",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
