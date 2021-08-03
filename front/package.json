@@ -21,11 +21,12 @@
     "react-dom": "^16.8.6",
     "react-google-maps": "^9.4.5",
     "react-onclickoutside": "^6.11.2",
+    "react-redux": "^7.2.4",
     "react-router-dom": "^5.2.0",
     "react-table": "^7.7.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "PORT=3006 react-scripts start",
     "build": "react-scripts build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",

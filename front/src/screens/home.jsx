@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import ChartHighstock from '../components/ChartHighstock';
-import TableStocks from '../components/TableOfStocks';
-import Header from '../components/Header.jsx';
+import ChartHighstock from '../components/chartHighstock';
+import TableStocks from '../components/tableOfStocks';
+import Header from '../components/header.jsx';
+import Footer from '../components/footer.jsx';
 import axios from 'axios';
 
 class Stats extends Component {
@@ -10,7 +11,7 @@ class Stats extends Component {
         // Initiate the state
         this.state = {
           data: [], 
-          title: 'Évolution des stocks en fonction du temps',
+          title: 'Évolution des stocks (en €) en fonction du temps',
           type: 'd3'
         };
 
@@ -39,7 +40,7 @@ class Stats extends Component {
                 localStorage.setItem('data', JSON.stringify(this.state.data));
             })
             .catch(function (error) {
-                document.getElementById('container_msg').innerHTML = "Une erreur est survenue, veuillez nous en excuser."
+                document.getElementById('container_msg').innerHTML = "Le service est momentanément indisponible"
             })
         } else {
             // S'assurer que le state est bien à jour
@@ -106,6 +107,7 @@ class Stats extends Component {
                         : <TableStocks data={this.state.data} title={this.state.title} updateData={this.updateData} displayButton={this.displayButton}/>}
                     </div>
                 </div>
+                <Footer></Footer>
             </div>
 		);
 	}

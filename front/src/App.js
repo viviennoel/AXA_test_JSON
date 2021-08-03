@@ -2,28 +2,25 @@
 import React, { Component } from 'react';
 import { history } from './helpers/history';
 import Home from './screens/home';
-import { Router, Route, Switch, Redirect } from 'react-router-dom';
+import Stats from './screens/stats';
+// For a production build, use Router instead of BrowserRouter (ignores the history)
+import {BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import './assets/style.css';
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-
-    history.listen((location, action) => {
-        // clear alert on location change
-        this.props.clearAlerts();
-    });
-  }
 
   render() {
     return (
-      // Routeur - Navigation
-      <div className="App">
+      <div>
         <Router history={history}>
             <Switch>
-              <Route path="/" component={Home} />
-              <Redirect from="*" to="/" />
-            </Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/stats">
+              <Stats />
+            </Route>
+          </Switch>
         </Router>
       </div>
     );
