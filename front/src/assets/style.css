@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu";
+}
+
+  .container {
+    margin: 0 15px;
+    padding: 5px;
+  }
+  
+  .nav {
+    margin: 2em auto;
+    display: inline-block;
+  }
+  .appear{
+    opacity:0;
+    animation: Appear 1s ease-in-out 0.2s forwards;
+  }
+  
+  .nav .btn {
+    margin: 0 3px;
+    border: 1px solid #ececec;
+    border-radius: 3px;
+    color: #ffffff;
+    outline: none;
+  }
+  /* Header */
+
+  .masthead {
+    background-image: linear-gradient(to right, #fff, #0a0448, #0a0448);
+    box-shadow:#0000001f 0px 0px 12px;
+    color: #fff;
+  }
+
+  .nav .btn-d3 {
+    background: #F37753;
+  }
+  
+  .nav .btn-d3:focus, .nav .btn-d3:hover, .nav .btn-d3.active {
+    background: #C65C4F;
+  }
+  
+  .nav .btn-highchart {
+    background: #508CC8;
+  }
+  
+  .nav .btn-highchart:focus, .nav .btn-highchart:hover, .nav .btn-highchart.active {
+    background: #3F51B5;
+  }
+  
+  .nav .btn-gmaps {
+    background: #D23C2F;
+  }
+  
+  .nav .btn-gmaps:focus, .nav .btn-gmaps:hover, .nav .btn-gmaps.active {
+    background: #EA4335;
+  }
+  
+  .map {
+    width: 100%;
+    height: 500px;
+    position: relative;
+  }
+  
+  .btn-hide-map {
+    position: absolute;
+    top: 440px;
+    right: 60px;
+    cursor: pointer;
+    background: grey;
+    color: white;
+    padding: .6rem;
+    z-index: 10;
+  }
+  
+  .btn-show-map {
+    display: block;
+    width: 5rem;
+    cursor: pointer;
+    background: grey;
+    color: white;
+    padding: .6rem;
+  }
+  
+  .btn-hide-map:hover {
+    background: darkgrey;
+  }
+  
+  #info-window {
+    margin: 1rem .6rem;
+    text-align: left;
+  }
+  
+  /* Style for stocks table */
+  .table {
+    text-align: left;
+    width: 100%;
+    background-image: radial-gradient(#fff, #ddd);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    display: table;
+  }
+  .title_wrapp{
+    background-image: linear-gradient(to right, #fff, #a1a5da) !important;;
+  }
+  .table_wrapp{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  }
+  
+  @media screen and (max-width: 580px) {
+    .table {
+      display: block;
+    }
+  }
+  .inputStocks{
+    width:100px;
+  }
+  .buttonsStocks{
+    cursor: pointer;
+    display: none;
+    border: none;
+    background-image: linear-gradient(45deg, #6e8cd44f, transparent);
+    margin-left: 10px;
+    padding: 3px 10px;
+    border-radius: 30px;
+    box-shadow: #0000008f 0px 0px 4px;
+  }
+  .row {
+    background: #f6f6f6;
+  }
+  
+  @media screen and (max-width: 580px) {
+    .row {
+      padding: 8px 0;
+      display: block;
+    }
+  }
+  
+  .row:nth-of-type(odd) {
+    background: #e9e9e9;
+  }
+  
+  .row.header {
+    font-weight: 900;
+    color: #ffffff;
+    background: #302982;
+  }
+  
+  .cell {
+    padding: 6px 12px;
+    display: table-cell;
+  }
+  
+  @media screen and (max-width: 580px) {
+    .cell {
+      padding: 2px 12px;
+      display: block;
+    }
+  }
+  
+  .cell.title {
+    padding: 0.8rem 0 0.7rem 0.8rem;
+    font-weight: 600;
+  }
+  
+  @media screen and (max-width: 580px) {
+    .cell.title {
+      padding: 0.8rem 0 0 0.8rem;
+    }
+  }
+  
+  
+  /* Default style */
+  
+  .App {
+    text-align: center;
+    background-image: radial-gradient(#bfbfbf, transparent);
+  }
+  
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 50px;
+  }
+  
+  .App-header {
+    background-color: #222;
+    height: 100px;
+    padding: 20px;
+    color: white;
+  }
+  
+  .App-intro {
+    font-size: large;
+  }
+
+  /* chart */
+
+  #chart {
+    box-shadow:#0000001f 0px 0px 12px;
+    border-radius: 10px;
+  }
+  
+  @keyframes App-logo-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+
+  @keyframes Appear {
+    from { opacity:0; }
+    to { opacity:1; }
+  }
+  
