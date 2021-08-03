@@ -60,7 +60,7 @@ class Stats extends Component {
                     {/* To display important messages */}
                     <div id="container_msg" className="text-center pt-5 pb-5"></div>
                     
-                    <div className="col-md-10 offset-md-1 appear text-center pb-5">
+                    <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2 appear text-center pb-5">
                         {/* Graph for the stochs gestion */}
                         {!this.state.data.length || !this.state.data ? 
                         <div>
